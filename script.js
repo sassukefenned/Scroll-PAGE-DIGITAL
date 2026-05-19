@@ -55,7 +55,7 @@ const myEbooks = [
     price: "R$ 23,99",
     oldPrice: "",
     priceNum: 0,
-    genre: "Autodesenvolvimento",
+    genre: "saúde",
     color: accentColors[0],
     coverImg: "imagens/capa-homem-alpha.png",
     kirvanoLink: "https://pay.kirvano.com/d76729ba-4c25-461f-b842-6d34aa828086",
@@ -248,18 +248,7 @@ function openModal(book) {
   document.getElementById('specCat').textContent = book.genre;
 
   // Show/hide Kirvano or PIX payment section
-  const pixSection = document.getElementById('pixPaymentSection');
-  const kirvanoSection = document.getElementById('kirvanoPaymentSection');
-  if (book.kirvanoLink) {
-    pixSection.style.display = 'none';
-    kirvanoSection.style.display = 'block';
-    const btn = document.getElementById('kirvanoBuyBtn');
-    btn.href = book.kirvanoLink;
-  } else {
-    pixSection.style.display = 'block';
-    kirvanoSection.style.display = 'none';
-    document.getElementById('pixKeyText').textContent = book.pixKey;
-    document.getElementById('qrBox').innerHTML = generateQRSVG(book.pixKey + book.price);
+ 
   }
 
   // Book cover in modal
