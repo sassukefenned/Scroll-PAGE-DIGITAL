@@ -215,7 +215,7 @@ function renderBooks() {
         </div>
         ${book.coverImg ? `<img class="card-cover-img" src="${book.coverImg}" alt="${book.title}" onerror="this.remove();">` : ''}
         <div class="card-overlay">
-          <button class="card-overlay-btn">${book.kirvanoLink ? 'Comprar Agora' : 'Ver detalhes'}</button>
+          <button class="card-overlay-btn">${book.caktoLink ? 'Comprar Agora' : 'Ver detalhes'}</button>
         </div>
       </div>
       <div class="card-info">
