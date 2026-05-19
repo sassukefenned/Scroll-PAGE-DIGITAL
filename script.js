@@ -248,7 +248,18 @@ function openModal(book) {
   document.getElementById('specCat').textContent = book.genre;
 
   // Show/hide Kirvano or PIX payment section
- 
+  const pixSection = document.getElementById('pixPaymentSection');
+  const kirvanoSection = document.getElementById('kirvanoPaymentSection');
+  if (book.kirvanoLink) {
+    pixSection.style.display = 'none';
+    kirvanoSection.style.display = 'block';
+    const btn = document.getElementById('kirvanoBuyBtn');
+    btn.href = book.kirvanoLink;
+  } else {
+    pixSection.style.display = 'block';
+    kirvanoSection.style.display = 'none';
+    document.getElementById('pixKeyText').textContent = book.pixKey;
+    document.getElementById('qrBox').innerHTML = generateQRSVG(book.pixKey + book.price);
   }
 
   // Book cover in modal
