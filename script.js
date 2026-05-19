@@ -72,8 +72,8 @@ const myEbooks = [
     genre: "Infantil",
     color: accentColors[2],
     coverImg: "imagens/capa-desenhos-biblicos.png",
-    kirvanoLink: "https://pay.kirvano.com/15437aaa-224c-4d7f-b7d0-d967e1d51fcc",
-    caktolink: "https://pay.cakto.com.br/3ccq47g_891047"
+    kirvanoLink: "",
+    caktolink: "https://pay.cakto.com.br/3ccq47g_891047",
     desc: "Mais de 100 desenhos bíblicos para colorir, divertir e ensinar a fé às crianças. Ilustrações encantadoras das principais histórias da Bíblia, ideais para escola dominical e uso em família."
   },
   {
