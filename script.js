@@ -46,19 +46,18 @@ function generateQRSVG(text) {
 // ─── BOOK DATA ───
 const accentColors = ['#e8c87a','#7ac8e8','#e87a9a','#8de87a','#e8a07a','#b07ae8'];
 
-// ─── SEUS EBOOKS (com link Kirvano) ───
+// ─── SEUS EBOOKS (com link Eduxz) ───
 const myEbooks = [
   {
     id: 1,
     title: "O Manual do Homem Alpha",
     author: "Scroll PAGE DIGITAL",
-    price: "R$ 23,99",
+    price: "R$ 19,99",
     oldPrice: "",
     priceNum: 0,
-    genre: "saúde",
     color: accentColors[0],
     coverImg: "imagens/capa-homem-alpha.png",
-    kirvanoLink: "https://pay.kirvano.com/d76729ba-4c25-461f-b842-6d34aa828086",
+    eduzzLink: "https://chk.eduzz.com/R9JXEV6Y0X",
     desc: "O guia completo para desenvolver presença, liderança e mentalidade de alto desempenho. Aprenda os princípios que transformam homens comuns em referências em todas as áreas da vida."
   },
   
@@ -72,32 +71,32 @@ const myEbooks = [
     genre: "Infantil",
     color: accentColors[2],
     coverImg: "imagens/capa-desenhos-biblicos.png",
-    caktoLink: "https://pay.cakto.com.br/3ccq47g_891047",
+    eduzzLink: "https://chk.eduzz.com/797Z1OBA0E",
     desc: "Mais de 100 desenhos bíblicos para colorir, divertir e ensinar a fé às crianças. Ilustrações encantadoras das principais histórias da Bíblia, ideais para escola dominical e uso em família."
   },
   {
     id: 3,
     title: "Atividades Lúdicas Bíblicas",
     author: "SCROLL PAGE DIGITAL",
-    price: "R$ 12,99",
+    price: "R$ 18,49",
     oldPrice: "38,99",
     priceNum: 0,
     color: accentColors[3],
     coverImg: "imagens/capa-atividades-ludicas.png",
-    kirvanoLink: "https://pay.kirvano.com/0b824d30-b244-4b12-a210-041999f8f1a9",
+    eduzzLink: "https://chk.eduzz.com/G92K8ORXWE",
     desc: "Caça-palavras, labirintos, jogos da memória e muito mais — tudo com temática bíblica. A forma mais divertida de ensinar os valores do evangelho para crianças de forma interativa e criativa."
   },
   {
     id: 4,
     title: "365 Orações para Ensinar aos Filhos",
     author: "SCROLL PAGE DIGITAL",
-    price: "R$ 21,99",
+    price: "R$ 18,39",
     oldPrice: "",
     priceNum: 0,
     genre: "Família & Fé",
     color: accentColors[4],
     coverImg: "imagens/capa-365-oracoes.png",
-    kirvanoLink: "https://pay.kirvano.com/fb2c6912-990d-4aa2-948f-c6cf23edd339",
+    eduzzLink: "https://chk.eduzz.com/1W32X5YD92",
     desc: "Uma oração para cada dia do ano, cuidadosamente escrita para pais ensinarem os filhos a se comunicar com Deus. Linguagem simples, afetiva e profunda — ideal para fortalecer a fé em família."
   },
   {
@@ -110,20 +109,20 @@ const myEbooks = [
     genre: "Relacionamentos",
     color: accentColors[5],
     coverImg: "imagens/capa-1000-frases-amor.png",
-    kirvanoLink: "https://pay.kirvano.com/22285045-3c59-4171-aafd-dd359d953e2f",
+    eduzzLink: "https://chk.eduzz.com/E9OGE6RGWB",
     desc: "Mil frases românticas e emocionantes para declarar amor em qualquer momento. Perfeito para mensagens, cartões, redes sociais e surpreender quem você ama com palavras que tocam o coração."
   },
   {
     id: 6,
     title: "Como Quitar Suas Dívidas",
     author: "Scroll PAGE DIGITAL",
-    price: "R$ 26,99",
+    price: "R$ 18,29",
     oldPrice: "",
     priceNum: 0,
     genre: "Finanças",
     color: accentColors[0],
     coverImg: "imagens/capa-quitar-dividas.png",
-    kirvanoLink: "https://pay.kirvano.com/92138f96-cc2f-4e2e-b206-dcf86c1668cb",
+    eduzzLink: "https://chk.eduzz.com/KW8ZVJ2R01",
     desc: "O método prático para eliminar dívidas rapidamente, organizar seu orçamento e reconquistar sua liberdade financeira. Estratégias reais aplicadas por quem saiu do vermelho e nunca mais voltou."
   }
 ];
@@ -133,12 +132,12 @@ const books = [
     id: 7,
     title: "Seja o Líder Que Todos Querem Ouvir",
     author: "Scroll PAGE DIGITAL",
-    price: "R$ 14,99",
+    price: "R$ 31,99",
     oldPrice: "R$ 49,90",
     priceNum: 29.90,
     color: accentColors[0],
     coverImg: "imagens/Seja o Líder Que Todos Querem Ouvir.png",
-    kirvanoLink: "https://pay.kirvano.com/d075d2ca-aad7-4ea0-aa92-909a71346489",
+    eduzzLink: "https://chk.eduzz.com/Q9N2POYK01",
     desc: "Um guia prático para desenvolver comunicação clara e inspiradora, conquistar respeito e se tornar referência em qualquer ambiente profissional.",
   },
   {
@@ -150,7 +149,7 @@ const books = [
     priceNum: 27.90,
     color: accentColors[1],
     coverImg: "imagens/Ninguém é Fudido por Acaso.png",
-    kirvanoLink: "https://pay.kirvano.com/b4044441-0897-47cc-922d-d8c5f33b8f1a",
+    eduzzLink: "https://chk.eduzz.com/1W32X53D92",
     desc: "Reflexões diretas e motivadoras sobre escolhas, disciplina e atitude. Um manual para quem quer virar o jogo e assumir o controle da própria vida.",
   },
   {
@@ -162,32 +161,178 @@ const books = [
     priceNum: 24.90,
     color: accentColors[2],
     coverImg: "imagens/Plano Alimentar – Desafio do Emagrecimento.png",
-    caktoLink: "https://pay.cakto.com.br/h5urmk2_891089",
+    eduzzLink: "https://chk.eduzz.com/60E2DVJDW3",
     desc: "Cardápios, receitas e estratégias de jejum para perder peso de forma saudável. Um plano simples e funcional para resultados em apenas 7 dias.",
   },
   {
     id: 10,
     title: "A Arte de Falar e Fazer",
     author: "SCROLL PAGE DIGITAL",
-    price: "R$ 12,99",
+    price: "R$ 16,29",
     oldPrice: "R$ 52,90",
     priceNum: 31.90,
     color: accentColors[3],
     coverImg: "imagens/A Arte de Falar e Fazer.png",
-    kirvanoLink: "https://pay.kirvano.com/629ae421-9f95-4eb6-a97a-b4c5e1f34442", 
+    eduzzLink: "https://chk.eduzz.com/Z0B1OJPJ9A", 
     desc: "Técnicas de comunicação e ação para transformar ideias em resultados. Ideal para quem busca mais impacto em apresentações e projetos.",
   },
   {
     id: 11,
     title: "50 Lições Para Você Compreender",
     author: "SCROLL PAGE DIGITAL",
-    price: "R$ 12,99",
+    price: "R$ 11,49",
     oldPrice: "R$ 54,90",
     priceNum: 33.90,
     color: accentColors[4],
     coverImg: "imagens/50 Lições Para Você Compreender.png",
-    kirvanoLink: "https://pay.kirvano.com/a68e00e3-2765-4e73-80bf-fb9c81656049", 
+    eduzzLink: "https://chk.eduzz.com/40QRO6GQ9B", 
     desc: "Um compilado de ensinamentos rápidos e profundos que ajudam a enxergar a vida com mais clareza e propósito.",
+    
+  },
+  {
+    id: 12,
+    title: "Alfabetização para Autistas",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 19,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Alfabetização para Autistas.png",
+    eduzzLink: "https://chk.eduzz.com/KW8ZVJQ201", 
+    desc: "Alfabetização especial para crianças autistas Atividades visuais, formas geométricas e associações lúdicas.Ideal para pais, professores e terapeutas.",
+    },
+  {
+    id: 13,
+    title: "Gosto de Aprender – 4 anos",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 14,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Gosto de Aprender – 4 anos.png",
+    eduzzLink: "https://chk.eduzz.com/VWGNEVQV07", 
+    desc: "4 anos é a idade mágica do aprendizado!+120 páginas de linguagem, matemática, cores e números. Com cantigas, parlendas e muito mais.",
+    
+  },{
+    id: 14,
+    title: "Caderno Criativo – 3 a 5 anos",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 14,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Caderno Criativo – 3 a 5 anos.png",
+    eduzzLink: "https://chk.eduzz.com/40QRO6ZP9B", 
+    desc: "Mais de 150 atividades lúdicas para crianças de 3 a 5 anos.Coordenação motora, alfabeto, números, recorte, colagem.Perfeito para educação infantil e reforço escolar.",
+    
+  },{
+    id: 15,
+    title: "Iniciando o Aprender – Pré-escola I",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 11,49",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Iniciando o Aprender – Pré-escola I.png",
+    eduzzLink: "https://chk.eduzz.com/1W32X5NP92", 
+    desc: "📚 Material alinhado à BNCC para crianças de 4 anos.192 páginas com vogais, números até 30, lateralidade, gráficos e mais.Ideal para escolas e reforço domiciliar.",
+    
+  },{
+    id: 16,
+    title: "Pequenos Mestres da Coordenação Motora",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 12,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Pequenos Mestres da Coordenação Motora.png",
+    eduzzLink: "https://chk.eduzz.com/Z0B1OJ279A", 
+    desc: "🖌️ 31 atividades sensoriais com tinta, colagem e tracejado. Desenvolve coordenação motora fina de forma divertida. Para crianças de 3 a 6 anos, inclusive com TEA ou atraso motor.",
+    
+  },
+  {
+    id: 17,
+    title: "Kit Autismo – Habilidades Cognitivas",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 22,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Kit Autismo – Habilidades Cognitivas.png",
+    eduzzLink: "https://chk.eduzz.com/39YNZ5G4WO", 
+    desc: "🧩 Use quebra-cabeças e pareamento para estimular cognição no TEA. Pranchas para recortar, jogos de formas, sombras e conceitos. Perfeito para terapia ocupacional e psicopedagogia.”.",},
+  ,
+  {
+    id: 19,
+    title: "101 Ideias para Brincar e Ensinar",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 19,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/101 Ideias para Brincar e Ensinar.png",
+    eduzzLink: "https://chk.eduzz.com/6W4G137O0Z", 
+    desc: "🎲 Brincadeiras adaptadas com objetivo pedagógico claro. Sensorial, encaixe, teatro, massinha, piquenique, acampamento. Guia para pais e professores que querem interação de verdade.",
+    
+  },
+  ,
+  {
+    id: 20,
+    title: "Como Alfabetizar Pessoas com Autismo",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 11,49",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Como Alfabetizar Pessoas com Autismo.png",
+    eduzzLink: "https://chk.eduzz.com/R9JXEQRE0X", 
+    desc: "🧭 Método completo: lateralidade, orientação espacial, memória cinestésica, linguagem oral. Dezenas de atividades práticas. Para educadores, terapeutas e familiares comprometidos com resultados.",
+    
+  },
+  ,
+  {
+    id: 21,
+    title: "Alfabetização Divertida – 2º ano",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 17,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Alfabetização Divertida – 2º ano.png",
+    eduzzLink: "https://chk.eduzz.com/7WXG1BA40A", 
+    desc: "📖 Apostila completa para o 2º ano (83 páginas). Poesias, fábulas, interpretação, ortografia, produção de frases. Reforço escolar, aulas remotas ou complemento em casa.",
+    
+  },
+  ,
+  {
+    id: 21,
+    title: "Leitura e Escrita em Ação – 1º e 2º ano",
+    author: "SCROLL PAGE DIGITAL",
+    price: "R$ 19,90",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/Leitura e Escrita em Ação – 1º e 2º ano.png",
+    eduzzLink: "https://chk.eduzz.com/D0R85O269Y", 
+    desc: "✏️ +100 atividades para desenvolver leitura e escrita. Sondagem, listas, textos, pontuação, jogos e plano de aula adaptado. Professor, isso é o que faltava no seu material.",
+    
+  },
+  ,
+  {
+    id: 21,
+    title: "🚨 Malha Fina? Nem pensar! Faça sua declaração com quem entende.- Declaração de Imposto de Renda",
+    author: "REINALDO JUNIOR",
+    price: "R$ 11,49",
+    oldPrice: "R$ 54,90",
+    priceNum: 33.90,
+    color: accentColors[4],
+    coverImg: "imagens/imposto de renda.jpeg",
+    eduzzLink: "https://chk.eduzz.com/39ZRE8NZWE", 
+    desc: "Não erre na declaração do Imposto de Renda e evite a malha fina! Você recebeu a notificação para declarar o IRPF e está com dúvidas? Não sabe quais despesas abater, como informar bens, rendimentos ou dependentes? Eu te ajudo do início ao fim, com segurança, rapidez e preço justo. ✅ O que você recebe: Análise completa da sua situação fiscal Preenchimento correto da declaração (via computador ou celular) Identificação de possíveis restituições Orientação para não cair na malha fina Entrega dentro do prazo da Receita Federal 👨‍💼 Quem sou eu: Reinaldo Junior – especialista em declaração de Imposto de Renda. Atendo pessoas físicas, autônomos, aposentados e profissionais liberais. 📞 Entre em contato agora mesmo: (63) 999596068 (WhatsApp) Atendimento rápido e personalizado. 🔒 Dados sigilosos e entrega garantida. Faça sua declaração com quem entende do assunto!",
+    
+  },
+  ,
+  { 
     
   },
   
@@ -214,7 +359,7 @@ function renderBooks() {
         </div>
         ${book.coverImg ? `<img class="card-cover-img" src="${book.coverImg}" alt="${book.title}" onerror="this.remove();">` : ''}
         <div class="card-overlay">
-          <button class="card-overlay-btn">${book.caktoLink ? 'Comprar Agora' : 'Ver detalhes'}</button>
+          <button class="card-overlay-btn">${book.eduzzLink ? 'Comprar Agora' : 'Ver detalhes'}</button>
         </div>
       </div>
       <div class="card-info">
@@ -249,15 +394,15 @@ function openModal(book) {
 
   // Show/hide Kirvano or PIX payment section
   const pixSection = document.getElementById('pixPaymentSection');
-  const kirvanoSection = document.getElementById('kirvanoPaymentSection');
-  if (book.kirvanoLink) {
+  const eduzzSection = document.getElementById('eduzzPaymentSection');
+  if (book.eduzzLink) {
     pixSection.style.display = 'none';
-    kirvanoSection.style.display = 'block';
-    const btn = document.getElementById('kirvanoBuyBtn');
-    btn.href = book.kirvanoLink;
+    eduzzSection.style.display = 'block';
+    const btn = document.getElementById('eduzzBuyBtn');
+    btn.href = book.eduzzLink;
   } else {
     pixSection.style.display = 'block';
-    kirvanoSection.style.display = 'none';
+    eduzzSection.style.display = 'none';
     document.getElementById('pixKeyText').textContent = book.pixKey;
     document.getElementById('qrBox').innerHTML = generateQRSVG(book.pixKey + book.price);
   }
