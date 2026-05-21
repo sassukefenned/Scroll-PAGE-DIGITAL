@@ -161,7 +161,7 @@ const books = [
     priceNum: 24.90,
     color: accentColors[2],
     coverImg: "imagens/Plano Alimentar – Desafio do Emagrecimento.png",
-    eduzzLink: "https://chk.eduzz.com/60E2DVJDW3",
+    eduzzLink: "https://sun.eduzz.com/60E2DVJDW3",
     desc: "Cardápios, receitas e estratégias de jejum para perder peso de forma saudável. Um plano simples e funcional para resultados em apenas 7 dias.",
   },
   {
